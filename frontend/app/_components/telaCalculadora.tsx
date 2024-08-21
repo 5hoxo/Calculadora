@@ -5,7 +5,9 @@ export default function TelaCalculadora() {
   }
   return (
     <div className=" bg-gray-500 pt-6 rounded-lg">
-      <span>addaf</span>
+      <p class="text-right text-3xl ">
+        <span className="font-black">addaf</span>
+      </p>
     </div>
   );
 }

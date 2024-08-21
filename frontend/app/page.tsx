@@ -65,7 +65,7 @@ export default function Home() {
       let css = {}
       switch (posicao) {
         case botoesCalculadora2.apagar:
-          estilo = "text-white text-center bg-red-400 px-4 py-2 m-2"
+          estilo = "text-white text-center bg-red-400 hover:bg-red-600 px-4 py-2 m-2"
           
           break
         case botoesCalculadora2.colcheteL:
@@ -76,13 +76,13 @@ export default function Home() {
         case botoesCalculadora2.mais:
         case botoesCalculadora2.menos:
           css = {border: "2px solid #2196F380"}
-          estilo = "text-[#2196F380] text-center bg-white px-4 py-2 m-2"
+          estilo = "font-extrabold text-[#2196F380] text-center bg-white hover:bg-sky-100 px-4 py-2 m-2"
           break
         case botoesCalculadora2.igual:
-          estilo = " px-4 py-2 m-2"
+          estilo = "hover:bg-white hover:text-black px-4 py-2 m-2"
           break
         default:
-          estilo = "text-black text-center bg-gray-400 px-4 py-2 m-2"
+          estilo = "font-bold text-black text-center bg-gray-400 hover:bg-gray-600 px-4 py-2 m-2"
           break
           
       }
@@ -92,9 +92,9 @@ export default function Home() {
     fileira.push(<div className="flex">{buttons}</div>)
   }
   return (
-    <main className="flex min-h-screen items-center justify-between p-24">
+    <main className="flex min-h-screen items-center justify-center p-24">
       <div className="flex flex-col">
-        <div className='justify-content: center bg-slate-950 h-2/6 p-5 rounded-t-2xl border-2 border-slate-200'>
+        <div className='bg-slate-950 h-2/6 p-5 rounded-t-2xl border-2 border-slate-200'>
           <TelaCalculadora></TelaCalculadora>
         </div>
         <div className="bg-white h-2/6 p-5 border-2 border-slate-200 rounded-b-2xl">
